@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:KeepInvest"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Import file" Command="{Binding OpenCommand}" />
+            <MenuItem Header="About"/>
+        </Menu>
         
-    </Grid>
+        <StatusBar DockPanel.Dock="Bottom">
+            <Label Content="klsdf"/>
+        </StatusBar>
+        <Grid>
+            
+        </Grid>
+    </DockPanel>
 </Window>
